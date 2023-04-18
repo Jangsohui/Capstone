@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 상단 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:elevation="0dp"
+            android:outlineProvider="none"/>
+
+        <EditText
+            android:id="@+id/edtRoomname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@null"
+            android:backgroundTint="#FFFFFF"
+            android:text="방 이름"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/btnSetup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/setup"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:elevation="0dp"
+            android:outlineProvider="none"/>
+
+    </LinearLayout>
+
+    <!-- 채팅내용 표시하는 스크롤뷰 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <!-- 대화 내용이 길어져서 스크롤이 필요해지면 텍스트뷰가 스크롤뷰 안에서
+        스크롤되도록 하기 위해서 텍스트뷰를 스크롤뷰 안에 넣음 -->
+        <TextView
+            android:id="@+id/tvChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="10dp" />
+
+    </ScrollView>
+
+    <!-- 하단 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+
+        <EditText
+            android:id="@+id/edtInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="15dp"
+            android:background="@null"
+            android:backgroundTint="#FFFFFF"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:backgroundTint="#F25C51"
+            android:text="전송"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+</LinearLayout>

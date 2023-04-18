@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/edtMyroom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F25C51"
+        android:text="나의 채팅방"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp" />
+    <!-- android:backgroundTint="#F25C51" 힌트나 커서, 테두리 등의 색을 바꾸는 데 사용 -->
+
+    <ListView
+        android:id="@+id/lvRoomList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp" />
+
+<!--    android:divider 속성값으로 @android:color/transparent을 지정했기 때문에 간격을 나타내는 선이 표시되지 않는다.-->
+
+</LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnCreateRoom"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="방 생성하기" />-->

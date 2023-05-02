@@ -11,11 +11,13 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class RoomActivity extends AppCompatActivity {
 
     Button btnBack, btnSetup;
+    TextView edtRoomName;
 
 
     @Override
@@ -25,6 +27,7 @@ public class RoomActivity extends AppCompatActivity {
 
         btnBack = findViewById(R.id.btnBack);
         btnSetup = findViewById(R.id.btnSetup);
+        edtRoomName = findViewById(R.id.edtRoomName);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,3 +39,5 @@ public class RoomActivity extends AppCompatActivity {
         });
     }
 }
+
+//컨텍스트

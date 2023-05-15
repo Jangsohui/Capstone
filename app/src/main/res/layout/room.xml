@@ -27,7 +27,7 @@
             android:outlineProvider="none"/>
 
         <TextView
-            android:id="@+id/edtRoomName"
+            android:id="@+id/tvRoomname"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"

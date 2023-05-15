@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         edtPassword = findViewById(R.id.edtPassword);
         btnLogin = findViewById(R.id.btnLogin);
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() { //로그인 처리
             @Override
             public void onClick(View v) {
                 String userId = edtId.getText().toString();

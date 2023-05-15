@@ -8,9 +8,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-// 방 생성을 위한 액티비티입니다.
+// 방 생성을 위한 액티비티입니다. 구현중임 먼저 급한게 있어서 그거부터..
 public class CreateRoomActivity extends AppCompatActivity {
-    EditText edtRoomName;
+    EditText edtRoomStart;
     Button btnCreate;
 
     @Override
@@ -18,13 +18,13 @@ public class CreateRoomActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_room);
 
-        edtRoomName = findViewById(R.id.edtRoomName);
+        edtRoomStart = findViewById(R.id.edtRoomStart);
         btnCreate = findViewById(R.id.btnCreate);
 
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String roomName = edtRoomName.getText().toString();
+                String roomName = edtRoomStart.getText().toString();
 
                 // 방 이름이 비어있지 않은 경우 방을 생성합니다.
                 if (!roomName.isEmpty()) {
